@@ -10,7 +10,7 @@ def generate_code():
     return formatted_code
 
 def check_code(code):
-    url = f"https://play.google.com/redeem?code={code}"
+    url = f"https://play.google.com/redeem={code}"
     response = requests.get(url)
     if response.status_code == 200:
         return True
